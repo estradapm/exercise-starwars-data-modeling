@@ -14,8 +14,8 @@ class User(Base):
     created_date = Column(DateTime)
     name = Column(String(50), nullable=False)
     lastname = Column(String(100), nullable=False)
-    email = Column(String(70), nullable=False)
-    password = Column(String(15), nullable=False)
+    email = Column(String(50), nullable=False)
+    password = Column(String(20), nullable=False)
     is_active = Column(Boolean)
     
 class Planet(Base):
